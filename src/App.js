@@ -2,6 +2,7 @@ import React from 'react';
 import ApolloClient from "apollo-boost";
 import { ApolloProvider, Query } from "react-apollo";
 import gql from "graphql-tag";
+import GithubCorner from "react-github-corner";
 import logo from './logo.svg';
 import './App.css';
 
@@ -52,6 +53,13 @@ const App = () => (
         <h4>Exchanges Rates</h4>
       </div>
       <ExchangeRates />
+      <GithubCorner
+        href={'https://github.com/jbastias/graphql-apollo-example'}
+        bannerColor="#70B7FD"
+        octoColor="#fff"
+        size={80}
+        direction="right"
+      />
     </div>
   </ApolloProvider>
 );
